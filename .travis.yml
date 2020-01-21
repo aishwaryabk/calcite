@@ -35,7 +35,7 @@ branches:
 install: true
 script:
   - ls
-  - sudo apt-get install -y redis-server build-essential tcl-dev tcl
+  - sudo apt-get install -y redis-server build-essential tcl-dev
   - sudo service redis-server start
   - redis-server --daemonize yes
   - redis-cli info
