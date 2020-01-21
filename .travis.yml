@@ -35,6 +35,7 @@ branches:
 install: true
 script:
   - ls
+  - apt-get install -y redis-server
   - redis-cli info
   - ./gradlew --no-daemon build
 git:
