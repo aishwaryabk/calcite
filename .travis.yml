@@ -35,8 +35,8 @@ branches:
 install: true
 script:
   - ls
-  - cd /redis
-  - grep -nr 2.8.19
+  - cd redis
+  - ls
   - sed -i '27s/6379/6378/' redis/src/test/resources/redis-mix-model.json
   - ./gradlew --no-daemon build
 git:
