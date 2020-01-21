@@ -34,6 +34,8 @@ branches:
     - /^[0-9]+-.*$/
 install: true
 script:
+  - ls
+  - find / -name redis-mix-model.json
   - ./gradlew --no-daemon build
 git:
   depth: 100
