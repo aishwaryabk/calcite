@@ -34,7 +34,7 @@ branches:
     - /^[0-9]+-.*$/
 install: true
 script:
-  - sed -i '87s/2.7.5/2.9.2/' calcite/gradle.properties
+  - sudo sed -i '87s/2.7.5/2.9.2/' calcite/gradle.properties
   - ./gradlew --no-daemon build
 git:
   depth: 100
