@@ -35,7 +35,7 @@ branches:
 install: true
 script:
   - ls
-  - sudo sed -i '78s/0.6/0.5/' gradle.properties
+  - sed -i '27s/6379/6378/' redis/src/test/resources/redis-mix-model.json
   - ./gradlew --no-daemon build
 git:
   depth: 100
