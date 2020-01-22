@@ -39,6 +39,7 @@ script:
   - sudo service redis-server start
   - redis-server --daemonize yes
   - redis-cli info
+  - sudo service redis-server stop
   - ./gradlew --no-daemon build
 git:
   depth: 100
